@@ -10,8 +10,7 @@
             padding: 0px;
         }
         body {
-            height: 100vh;
-        width: 100vw;
+          min-height: 100vh;
         overflow: scroll;
         background-color: #fdfcfc;
         display: flex;
@@ -19,15 +18,16 @@
         justify-content: center;
         align-items: center;
         
-      }
-
+        }
         .section1{
-            height:38rem;
+            height:130px;
+            padding: 10px;
             width:70%;
             background: #1D976C;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 color:white;
+border-radius: 3px;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -67,7 +67,8 @@ border-radius: 50px;
             font-size:1.5rem;
         }
         .section2{
-            height:35rem;
+          height:80px;
+            padding: 10px;
             width:70%;
             display: flex;
             flex-direction: column;
@@ -75,7 +76,8 @@ border-radius: 50px;
             align-items: start;
         }
         .section3{
-            height:36rem;
+          height:180px;
+            padding: 10px;
             width:70%;
             display: flex;
             flex-direction: column;
@@ -86,6 +88,7 @@ border-radius: 50px;
             width: 100%;
             border: 1.5px solid #4fa56f;
             border-collapse: collapse;
+            border-radius: 3px;
         }
         th,td{
             padding: 0.5rem;
@@ -95,7 +98,8 @@ border-radius: 50px;
             background-color:#4fa56f;
         }
         .section4{
-            height:28rem;
+          height:60px;
+            padding: 10px;
             width:70%;
             display: flex;
             flex-direction: column;
@@ -106,7 +110,8 @@ border-radius: 50px;
             font-weight: bold;
         }
         .section5{
-            height:48rem;
+          height:100px;
+            padding: 10px;
             width:70%;
             display: flex;
             flex-direction: column;
@@ -118,12 +123,13 @@ border-radius: 50px;
             margin-left: 2rem;
         }
         .section6{
-            height:5rem;
+          height:20px;
+            padding: 10px;
             width:70%;
             background: #1D976C;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+border-radius: 3px;
             color: black;
             display: flex;
             flex-direction: row;
@@ -142,7 +148,8 @@ background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, F
 
         }
         .section7{
-            height:35rem;
+          height:75px;
+            padding: 10px;
             width:70%;
             display: flex;
             flex-direction: column;
@@ -388,13 +395,13 @@ background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, F
         <h1 class="section-title">Education <br>
         </h1>
         <table class="ed-tab">
-            <tr><th>Degree</th>
+            <tr><th>Educational Qualification</th>
             <th>Campus</th>
-        <th>Percentage</th></tr>
+        <th>Score or CGPA</th></tr>
         <tr>
             <td>B.E - CSE</td>
             <td>SIET</td>
-            <td>89%</td>
+            <td>8.96</td>
         </tr>
         <tr>
             <td>10th standard</td>
@@ -473,5 +480,15 @@ background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, F
   let Hi="Dog";
   console.log(hi);
   console.log(Hi);
+  //functions
+  function hello(data){
+    console.log("Function:"+data);
+  }
+  hello(5)
+  //multiple paramwters
+  function add(a,b){
+    console.log(a+b)
+  }
+  add(5,6)
 </script>
 </html>
